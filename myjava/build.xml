@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Apache sample java code project" default="run">
+<target name="run" depends="compile">
+<java classname="myjava.firstclass">
+<classpath path="Result">
+</classpath>
+</java>
+</target>
+<target name="compile">
+<javac includeantruntime="false" srcdir="./src" destdir="Result"></javac>
+</target>
+</project>
